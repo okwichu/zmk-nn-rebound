@@ -70,5 +70,16 @@
                         >;
 			            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
                 };
+
+        lower_layer {        
+            label = "Lower";              					  
+		    bindings = <
+        &none               &none       &none       &none       &none           &none                                           &kp N6                  &kp N7        &kp N8        &kp N9      &kp N0          &none 
+        &none               &none       &none       &none       &none           &none                    &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
+        &none               &none       &none       &none       &none           &none                    &none                  &kp HOME                &kp PG_DN     &kp PG_UP     &kp END     &none           &none 
+        &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &none         &trans        &none       &none           &trans
+                        >;
+			            sensor-bindings = <&inc_dec_kp LG(LS(LBKT)) LG(LS(RBKT))>;
+                };
         };
 };
