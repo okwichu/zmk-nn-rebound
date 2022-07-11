@@ -63,10 +63,10 @@
         default_layer {        
             label = "Default";              					  
 		    bindings = <
-        &kp GRAVE           &kp Q       &kp W       &kp E       &kp R         &kp T                 &kp Y                   &kp U         &kp I         &kp O       &kp P           &kp BSLH
-        &kp ESC             &hs LSHFT A &hm LALT S  &hm LCTL D  &hm LGUI F    &kp G                 &kp H                   &hm RCMD J    &hm RCTRL K   &hm RALT L  &hs LSHFT SEMI  &kp SQT
-        &mt LSHIFT LPAR     &kp Z       &kp X       &kp C       &kp V         &kp B                 &kp N                   &kp M         &kp COMMA     &kp DOT     &kp FSLH        &mt RSHIFT RPAR
-        &none               &none       &none       &mo LWR     &kp LCMD      &am LS(LALT) SPACE    &am LS(RC(LALT)) BSPC   &kp TAB       &mo RAS       &none       &none           &none
+        &kp GRAVE           &kp Q       &kp W       &kp E       &kp R         &kp T                                             &kp Y                   &kp U         &kp I         &kp O       &kp P           &kp BSLH
+        &kp ESC             &hs LSHFT A &hm LALT S  &hm LCTL D  &hm LGUI F    &kp G                       &none                 &kp H                   &hm RCMD J    &hm RCTRL K   &hm RALT L  &hs LSHFT SEMI  &kp SQT
+        &mt LSHIFT LPAR     &kp Z       &kp X       &kp C       &kp V         &kp B                       &none                 &kp N                   &kp M         &kp COMMA     &kp DOT     &kp FSLH        &mt RSHIFT RPAR
+        &none               &none       &none       &mo LWR     &kp LCMD      &am LS(LALT) SPACE          &none                 &am LS(RC(LALT)) BSPC   &kp TAB       &mo RAS       &none       &none           &none
                         >;
 			            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
                 };
