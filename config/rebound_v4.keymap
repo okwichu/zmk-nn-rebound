@@ -16,6 +16,30 @@
 #define RAS     2
 #define ADJ     3
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
+/ {
+    combos {
+    };
+  };
+
+/ {
+    macros {
+        hem: hem {
+            label = "hem";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp BSPC>
+                , <&macro_wait_time 100>
+                , <&macro_press &kp LSHFT &kp LCTRL &kp LALT>
+                ;
+        };
+    };
+};
+
 / {
 
     behaviors {
