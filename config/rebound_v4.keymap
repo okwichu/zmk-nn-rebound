@@ -78,33 +78,33 @@
         &mt LSHIFT LPAR     &kp Z       &kp X       &kp C       &kp V         &kp B                       &none                 &kp N                   &kp M         &kp COMMA     &kp DOT     &kp FSLH        &mt RSHIFT RPAR
         &none               &none       &none       &mo LWR     &kp LCMD      &am LS(LALT) SPACE          &none                 &am LS(RC(LALT)) BSPC   &kp TAB       &mo RAS       &none       &none           &none
                         >;
-			            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+			            sensor-bindings = <&inc_dec_kp LG(LS(RBKT)) LG(LS(LBKT))>;
                 };
 
         lower_layer {        
             label = "Lower";              					  
 		    bindings = <
         &none               &none       &none       &none       &none           &none                                           &kp N6                  &kp N7        &kp N8        &kp N9      &kp N0          &kp MINUS
-        &none               &none       &none       &none       &none           &none                    &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
-        &none               &none       &none       &none       &none           &none                    &none                  &kp LBKT                &kp RBKT      &kp PG_UP     &kp END     &none           &none 
+        &none               &none       &none       &none       &none           &none               &kp LA(RG(SPACE))           &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
+        &trans              &none       &none       &none       &none           &none                    &none                  &kp LBKT                &kp RBKT      &kp PG_UP     &kp END     &none           &trans
         &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &kp ENTER     &trans        &none       &none           &trans
                         >;
-			            sensor-bindings = <&inc_dec_kp LG(LS(LBKT)) LG(LS(RBKT))>;
+                        sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
                 };
         raise_layer {        
             label = "Raise";              					  
 		    bindings = <
         &kp EQUAL           &kp N1      &kp N2      &kp N3      &kp N4          &kp N5                                          &none                   &none         &none         &none       &none           &none 
         &none               &none       &none       &none       &none           &none                    &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
-        &none               &none       &none       &none       &none           &none                    &none                  &kp HOME                &kp PG_DN     &kp PG_UP     &kp END     &none           &none 
-        &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &none         &trans        &none       &kp C_MUTE         &trans
+        &trans              &none       &none       &none       &kp LBRC        &kp RBRC                 &none                  &kp HOME                &kp PG_DN     &kp PG_UP     &kp END     &none           &trans
+        &none               &none       &none       &trans      &none           &trans                   &none                  &trans                  &none         &trans        &none       &kp C_MUTE      &trans
                         >;
-			            sensor-bindings = <&inc_dec_kp LG(LS(LBKT)) LG(LS(RBKT))>;
+			            sensor-bindings = <&inc_dec_kp LG(LS(RBKT)) LG(LS(LBKT))>;
                 };
         adjust_layer {        
             label = "Adjust";              					  
 		    bindings = <
-        &trans              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    &bt BT_CLR                                      &kp N6                  &kp N7        &kp N8        &kp N9      &kp N0          &none 
+        &trans              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3    7&bt BT_CLR                                      &kp N6                  &kp N7        &kp N8        &kp N9      &kp N0          &none 
         &none               &none        &none        &none        &none           &none                    &none                  &kp LEFT                &kp DOWN      &kp UP        &kp RIGHT   &trans          &none 
         &none               &none        &none        &none        &none           &none                    &none                  &kp HOME                &kp PG_DN     &kp PG_UP     &kp END     &none           &none 
         &none               &none        &none        &trans       &none           &trans                   &none                  &trans                  &none         &trans        &none       &none           &trans
