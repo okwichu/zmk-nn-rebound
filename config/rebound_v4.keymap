@@ -85,7 +85,7 @@
             label = "Lower";              					  
 		    bindings = <
                 &kp TILDE   &kp N1      &kp N2      &kp N3      &kp N4   &kp N5                         &kp N6      &kp N7   &kp N8    &kp N9  &kp N0   &kp PG_UP
-                &kp GRAVE   &none       &kp UP      &none       &none    &bootloader  &kp EQUAL           &none       &none    &none     &none   &none    &kp PG_DN
+                &kp GRAVE   &none       &kp UP      &none       &none    &none      &kp EQUAL           &none       &none    &none     &none   &none    &kp PG_DN
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp N4   &kp N5     &kp PLUS            &none       &none    &none     &none   &none    &none
                 &none       &none       &none       &mo 1       &none    &none      &kp BSPC            &none       &none    &mo 2     &none   &none    &none
                         >;
